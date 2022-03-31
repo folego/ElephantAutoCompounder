@@ -1,6 +1,6 @@
 # Autocompound Tool for Elephant TRUNK Stampede
-This tool can run locally and your private key will be stored in a regular txt file. This key is needed to interact with the contract and execute the command to roll your rewards.
-Please, contribute adding me as a parter: 0x98C4Ac9C24C2971e5e2C085cA424a061D0A9020D
+This tool can run locally and your private key will be stored in a regular txt file. This key is needed to interact with the contract and execute the command to roll your rewards.  
+Please, contribute adding me as a parter(https://elephant.money/trunk.html): 0x98C4Ac9C24C2971e5e2C085cA424a061D0A9020D
 
 # How to configure
 Check the 2 variable in the stampede.py file called minimum_to_roll and time_between_check.
@@ -24,9 +24,9 @@ $ python -m pip install python-dotenv
 3. Using a python terminal (type python in your terminal or command line), import `cryptography` and encrypt your private key
 
 ```py
-from cryptography.fernet import Fernet
-key = Fernet.generate_key()
-key.decode()
+>>>from cryptography.fernet import Fernet
+>>>key = Fernet.generate_key()
+>>>key.decode()
 ```
 
 4. Open `.env.example` and replace the key with the key you generated in step 3. SAVE THE FILE WITHOUT .example at the end. This key 
@@ -51,7 +51,7 @@ phrase and import your wallet into MetaMask. Then you can export the private key
 
 ## Using the Roller
 
-In a terminal window, navigate to the location where you saved all the files. Run the `stampede.py` file.
+In a terminal window, navigate to the location where you saved all the files. Run `python stampede.py` file.
 
 ```bash
 $ python stampede.py
